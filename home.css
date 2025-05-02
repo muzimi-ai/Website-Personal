@@ -1,0 +1,133 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  nav {
+    background: linear-gradient(to right, #076d00, #008a37);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .logo-container {
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .huruf-i {
+    position: relative;
+    display: inline-block;
+  }
+
+  .huruf-i img {
+    position: absolute;
+    top: -27px; /* atur posisi vertikal logo */
+    left: 4px;
+    transform: translateX(-50%);
+    width: 30px;
+    height: auto;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-left: 20px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  header {
+    background: linear-gradient(to right, #db3434, #bae303);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .card {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .gambar img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  footer {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .kata {
+    margin: 20px 0;
+  }
+
+  a.tbl-biru {
+    background-color: #db3434;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
+  a.tbl-biru:hover {
+    text-decoration: none;
+    background-color: red;
+  }
+
+  /* Responsive */
+  @media screen and (max-width: 600px) {
+    nav {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    nav ul {
+      flex-direction: row;
+      position: static;
+      background: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 5px 10px 0 0;
+    }
+
+    header {
+      padding: 20px;
+    }
+  }
